@@ -1,0 +1,371 @@
+@import url("./fonts.css");
+html {
+  direction: rtl;
+}
+
+body {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  text-align: right;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.landPage .customNav {
+  background: #005bea;
+  color: #fff;
+}
+
+.landPage .customNav .createActions {
+  width: 380px;
+}
+
+.landPage .customNav .createActions a {
+  padding: 0.375rem 2.5rem;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.landPage .customNav .createActions .signUp {
+  background: #ffbc3c;
+  color: #005bea;
+}
+
+.landPage .customNav .createActions .createBook {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.landPage .customNav .socialAccounts {
+  width: 130px;
+}
+
+.landPage .customNav .socialAccounts a {
+  font-size: 30px;
+  height: 30px;
+}
+
+.landPage .banner {
+  background: url("../imgs/banner.png");
+  background-size: cover;
+  height: 653px;
+  position: relative;
+}
+
+.landPage .banner::before {
+  background: linear-gradient(-120deg, rgba(142, 84, 233, 0.3) 0%, rgba(0, 91, 234, 0.7) 100%);
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.landPage .banner .bannerData {
+  height: 70%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 40px;
+}
+
+.landPage .banner .bannerData .information {
+  height: 75%;
+  width: 50%;
+}
+
+.landPage .banner .bannerData .information .title {
+  font-size: 36px;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.landPage .banner .bannerData .information .paragraph {
+  font-size: 24px;
+}
+
+.landPage .banner .bannerData .information .request {
+  background: #005bea;
+  font-family: "HelveticaNeueLT Arabic 75";
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 14px 40px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.landPage .banner .bannerData .information .request:hover {
+  color: #005bea;
+  background: #fff;
+}
+
+.landPage .popupSection {
+  position: relative;
+  width: 75%;
+  height: 240px;
+  top: -80px;
+}
+
+.landPage .popupSection .popup {
+  height: 100%;
+  border-left: 10px solid #005bea;
+  border-right: 10px solid #005bea;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.landPage .popupSection .popup .column {
+  height: 100%;
+  padding: 30px 80px;
+  color: #005bea;
+}
+
+.landPage .popupSection .popup .column h3 {
+  font-size: 20px;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.landPage .popupSection .popup .column a {
+  color: #005bea;
+  border: 1px solid #005bea;
+  padding: 10px 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.landPage .popupSection .popup .column a:hover {
+  background: #005bea;
+  color: #fff;
+}
+
+.landPage .popupSection::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  background: #005bea;
+  left: 50%;
+  top: 15%;
+}
+
+.landPage .specifications .specific {
+  position: relative;
+  top: -80px;
+  margin-bottom: 100px;
+}
+
+.landPage .specifications .specific .content .title {
+  font-size: 36px;
+  font-family: "HelveticaNeueLT Arabic 75";
+  color: #005bea;
+}
+
+.landPage .specifications .specific .content .paragraph {
+  font-size: 18px;
+}
+
+.landPage .designDiscount {
+  background: linear-gradient(32deg, #8e54e9 0%, #005bea 100%);
+}
+
+.landPage .designDiscount .data .content {
+  height: 260px;
+  color: #fff;
+}
+
+.landPage .designDiscount .data .content .title {
+  font-size: 36px;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.landPage .designDiscount .data .content .paragraph {
+  font-size: 18px;
+}
+
+.landPage .designDiscount .data a {
+  color: #fff;
+  font-size: 18px;
+  font-family: "HelveticaNeueLT Arabic 75";
+  border: 2px solid #fff;
+  padding: 11px 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.landPage .designDiscount .data a:hover {
+  color: #005bea;
+  background: #fff;
+}
+
+.landPage .testimonials {
+  height: 100vh;
+}
+
+.landPage .testimonials .item {
+  height: 420px;
+  padding: 0 20%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.landPage .testimonials .item img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 6px solid #005bea;
+  border-radius: 50%;
+}
+
+.landPage .testimonials .item h3 {
+  font-family: "HelveticaNeueLT Arabic 75";
+  font-size: 36px;
+  color: #005bea;
+}
+
+.landPage .testimonials .item .text {
+  color: #1a1a1a;
+  font-size: 22px;
+  font-family: "HelveticaNeueLT Arabic 45";
+}
+
+.landPage .testimonials a {
+  color: #005bea;
+  font-size: 80px;
+  height: 30%;
+  margin-top: auto;
+  opacity: 1;
+}
+
+.landPage .testimonials .prev {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.landPage .testimonials .next {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.landPage .contacts {
+  height: 460px;
+}
+
+.landPage .contacts .address {
+  width: 35%;
+  background: #f9f9f9;
+  height: 100%;
+  padding: 6% 4%;
+}
+
+.landPage .contacts .address div i {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+.landPage .contacts .address div span {
+  font-size: 20px;
+  font-family: "HelveticaNeueLT Arabic 75";
+  margin-right: 30px;
+}
+
+.landPage .contacts .address div span a {
+  color: #1a1a1a;
+}
+
+.landPage .contacts .address .number {
+  direction: ltr;
+}
+
+.landPage .contacts .map {
+  width: 65%;
+  height: 100%;
+}
+
+.landPage .inquiry {
+  height: 600px;
+  background: #1a1a1a;
+  border-top: 8px solid #005bea;
+}
+
+.landPage .inquiry .data {
+  position: relative;
+  height: 100%;
+}
+
+.landPage .inquiry .data::before {
+  content: "";
+  width: 1px;
+  height: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #fff;
+}
+
+.landPage .inquiry .data .about {
+  padding: 80px;
+}
+
+.landPage .inquiry .data .about img {
+  width: 204px;
+}
+
+.landPage .inquiry .data .about .text {
+  font-family: "HelveticaNeueLT Arabic 45";
+}
+
+.landPage .inquiry .data .message {
+  padding: 80px;
+}
+
+.landPage .inquiry .data .message p {
+  font-size: 24px;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.landPage .inquiry .data .message form label {
+  font-family: "HelveticaNeueLT Arabic 75";
+  color: #fff;
+}
+
+.landPage .inquiry .data .message form input {
+  height: 44px;
+}
+
+.landPage .inquiry .data .message form button {
+  padding: 9px 32px;
+  background: #005bea;
+}
+
+.landPage footer {
+  height: 110px;
+  background: #005bea;
+  color: #fff;
+}
+
+.landPage footer .copyright {
+  width: 436px;
+}
+
+.landPage footer ul {
+  width: 35%;
+}
+/*# sourceMappingURL=styles.css.map */
