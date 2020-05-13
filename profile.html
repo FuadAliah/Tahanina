@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./node_modules/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/public.css">
+
+    <title>Signing</title>
+</head>
+
+<body class="profile">
+
+    <div class="container">
+
+        <nav class="customNav navbar navbar-expand-lg navbar-light bg-white border-bottom px-0">
+            <a class="navbar-brand m-0" href="#"><img src="./imgs/blueLogo.svg" height="68" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto p-0 py-3">
+                    <li class="nav-item dropdown navItem">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="las la-user-circle"></i>
+                            <span class="mx-2">حسابي</span>
+                        </a>
+                        <div class="dropdown-menu dropDown" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./profile.html">ملفي الشخصي</a>
+                            <a class="dropdown-item" href="./messages.html">الرسائل</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navItem active">
+                        <a class="nav-link px-3" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link px-3" href="#">المدونة</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link px-3" href="#">طلب تصميم</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link px-3" href="#">الشروط العامة</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link pr-3 pl-0" href="#">الاسئلة والأجوبة</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="profileContent">
+
+            <div class="pageTitle my-5">
+                <h4 class="title p-3 text-white m-0">ملفي الشخصي</h4>
+            </div>
+
+            <div class="content mb-5">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-md-2 profileImg d-flex flex-column">
+                            <img src="./imgs/sqProfileImg.png" class="p-2 border mb-2" alt="">
+
+                            <form>
+                                <div class="form-group position-relative mb-5">
+                                    <label for="exampleFormControlFile1">تغيير الصورة</label>
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <form class="col-12 col-md-8 mr-auto">
+                            <div class="form-group mb-4 row">
+                                <label for="inputName" class="col-sm-3 col-form-label">الأسم*</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputName"
+                                        value="توفيق وائل توفيق عمرو">
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 row">
+                                <label for="inputPassword" class="col-sm-3 col-form-label">الجنس*</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="inputPassword"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 row position-relative">
+                                <label for="inputEmail" class="col-sm-3 col-form-label">البريد الإلكتروني*</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="inputEmail"
+                                        value="tawfeekamr91@gmail.com">
+                                    <small id="emailHelp" class="form-text text-muted mt-2">ملاحظة مهمة: تم تفعيل البريد
+                                        عن
+                                        طريق الذهاب إلى صندوق الواردات وضغط على زر تفعيل البريد الإلكتروني، وفي حال عدم
+                                        تواجده في صندوق الوارد، تأكد أن البريد في صندوق الحضر (Spam)، وهذا الإجراء مهم
+                                        جداً لتتمكن من إستعادة حسابك في حال نسيان كلمة السر.</small>
+                                </div>
+                                <div class="inactivate text-muted position-absolute">غير مفعل</div>
+                            </div>
+
+                            <div class="divider my-5"></div>
+
+                            <div class="form-group mb-4 row">
+                                <label for="inputFacebook" class="col-sm-3 col-form-label">رابط facebook</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputFacebook">
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 row">
+                                <label for="inputInstagram" class="col-sm-3 col-form-label">رابط Instgram</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputInstagram">
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 row">
+                                <label for="inputTwitter" class="col-sm-3 col-form-label">رابط twitter</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputTwitter">
+                                </div>
+                            </div>
+
+                            <div class="divider my-5"></div>
+
+                            <div class="form-group mb-4 row position-relative textArea">
+                                <label for="exampleFormControlTextarea1" class="col-sm-3 col-form-label">نبذة
+                                    عنك</label>
+                                <p class="m-0 col-sm-3 position-absolute">(اختياري)</p>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        placeholder="عرف عن نفسك" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row mt-5">
+                                <label for="exampleFormControlTextarea1" class="col-sm-3 col-form-label"></label>
+                                <div class="col-sm-9">
+                                    <button type="submit" class="btn btn-primary">حفظ البيانات</button>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer class="d-flex justify-content-between align-items-center">
+
+        <div class="copyright">
+            <div class="container-fluid">
+                <p class="mx-5 my-0">جميع الحقوق محفوظة لدى موقع تهانينا © 2020</p>
+            </div>
+        </div>
+
+        <ul class="mx-5 my-0 p-0 list-unstyled d-flex justify-content-between">
+            <li><a href="#" class="text-white">الرئيسية</a></li>
+            <li><a href="#" class="text-white">المدونة</a></li>
+            <li><a href="#" class="text-white">طلب تصميم</a></li>
+            <li><a href="#" class="text-white">الشروط العامة</a></li>
+            <li><a href="#" class="text-white">الاسئلة والأجوبة</a></li>
+        </ul>
+
+    </footer>
+
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

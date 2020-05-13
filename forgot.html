@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./node_modules/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/public.css">
+
+    <title>Signing</title>
+</head>
+
+<body class="forgot">
+
+    <div class="container">
+
+        <nav class="customNav navbar navbar-expand-lg navbar-light bg-white border-bottom px-0">
+            <a class="navbar-brand m-0" href="#"><img src="./imgs/blueLogo.svg" height="68" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto p-0 py-3">
+                    <li class="nav-item navLink active">
+                        <a class="nav-link px-3" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item navLink">
+                        <a class="nav-link px-3" href="#">المدونة</a>
+                    </li>
+                    <li class="nav-item navLink">
+                        <a class="nav-link px-3" href="#">طلب تصميم</a>
+                    </li>
+                    <li class="nav-item navLink">
+                        <a class="nav-link px-3" href="#">الشروط العامة</a>
+                    </li>
+                    <li class="nav-item navLink">
+                        <a class="nav-link pr-3 pl-0" href="#">الاسئلة والأجوبة</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="contain d-flex align-items-center">
+
+            <div class="content d-flex justify-content-between flex-column">
+
+                <div class="signing align-items-center d-none d-md-flex">
+
+                    <div class="signUp d-flex justify-content-between flex-column position-relative">
+                        <div class="head">
+                            <h3 class="title mb-4 text-white">مرحباً بك في تهانينا!</h3>
+                            <p class="intro m-0 text-white">موقعك الالكتروني لتوثيق ذكرياتك الجميلة في التخرج، زواج، أو
+                                مولود جديد! سجل معنا في الآن في تهانينا!!
+                            </p>
+                        </div>
+                        <div class="body">
+                            <form class="d-flex justify-content-between flex-column">
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <input type="text" class="form-control" placeholder="الإسم الكامل">
+                                    </div>
+                                    <div class="form-group col-6 after">
+                                        <select class="form-control">
+                                            <option disabled selected>الجنس</option>
+                                            <option>ذكر</option>
+                                            <option>أنثى</option>
+                                        </select>
+                                        <i class="las la-angle-down"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="كلمة السر">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mt-4">إنشاء حساب</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="signIn d-flex justify-content-between flex-column position-relative">
+                        <div class="head">
+                            <h3 class="title mb-4">استعادة كلمة السر!</h3>
+                            <p class="intro m-0">متأكد من إدخال بريدك الصحيح الذي يرتبط به حسابك! اذا واجهت أي
+                                مشكلة أخرى الرجاء التواصل مع الدعم الفني.
+                            </p>
+                        </div>
+                        <div class="body">
+                            <form class="d-flex justify-content-between flex-column">
+                                <div class="loginForm d-flex justify-content-between flex-column">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+                                    </div>
+                                </div>
+                                <a href="./sign-up.html" class="text-center mb-3">العودة لتسجيل الدخول</a>
+                                <button type="submit" class="loginBtn btn btn-primary mt-4">استعد كلمة
+                                    السر</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mobSigning align-items-center d-flex flex-column d-md-none">
+
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                                aria-controls="pills-home" aria-selected="true">إنشاء حساب</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">تسجيل الدخول</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="signUp d-flex justify-content-between flex-column position-relative">
+                                <div class="head">
+                                    <h3 class="title mb-4 text-white">مرحباً بك في تهانينا!</h3>
+                                    <p class="intro mb-4 text-white">موقعك الالكتروني لتوثيق ذكرياتك الجميلة في التخرج،
+                                        زواج، أو
+                                        مولود جديد! سجل معنا في الآن في تهانينا!!
+                                    </p>
+                                </div>
+                                <div class="body">
+                                    <form class="d-flex justify-content-between flex-column">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="الإسم الكامل">
+                                        </div>
+                                        <div class="form-group after">
+                                            <select class="form-control">
+                                                <option disabled selected>الجنس</option>
+                                                <option>ذكر</option>
+                                                <option>أنثى</option>
+                                            </select>
+                                            <i class="las la-angle-down"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="كلمة السر">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary mt-4">إنشاء حساب</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="signIn justify-content-between flex-column position-relative">
+                                <div class="head">
+                                    <h3 class="title mb-4">استعادة كلمة السر!</h3>
+                                    <p class="intro mb-4">تأكد من إدخال بريدك الصحيح الذي يرتبط به حسابك! اذا واجهت أي
+                                        مشكلة أخرى الرجاء التواصل مع الدعم الفني.
+                                    </p>
+                                </div>
+                                <div class="body">
+                                    <form class="d-flex justify-content-between flex-column">
+                                        <div class="loginForm d-flex justify-content-between flex-column">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control"
+                                                    placeholder="البريد الإلكتروني">
+                                            </div>
+                                        </div>
+                                        <a href="./sign-up.html" class="text-center mb-3">العودة لتسجيل الدخول</a>
+                                        <button type="submit" class="loginBtn btn btn-primary mt-4">استعد كلمة
+                                            السر</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="socialSigning d-flex flex-column justify-content-between text-center">
+
+                    <h4 class="m-0">بإمكانك إيضاً بتسجيل الدخول باستخدام</h4>
+
+                    <div class="social d-flex justify-content-between">
+
+                        <a href="#" class="facebook text-white d-flex align-items-center justify-content-between">
+                            <span class="text-center d-none d-md-block">facebook</span>
+                            <i class="lab la-facebook-f text-center"></i>
+                        </a>
+                        <a href="#" class="google text-white d-flex align-items-center justify-content-between">
+                            <span class="text-center d-none d-md-block">Google</span>
+                            <i class="lab la-google text-center"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="d-flex justify-content-between align-items-center">
+
+        <div class="copyright">
+            <div class="container-fluid">
+                <p class="mx-5 my-0">جميع الحقوق محفوظة لدى موقع تهانينا © 2020</p>
+            </div>
+        </div>
+
+        <ul class="mx-5 my-0 p-0 list-unstyled d-flex justify-content-between">
+            <li><a href="#" class="text-white">الرئيسية</a></li>
+            <li><a href="#" class="text-white">المدونة</a></li>
+            <li><a href="#" class="text-white">طلب تصميم</a></li>
+            <li><a href="#" class="text-white">الشروط العامة</a></li>
+            <li><a href="#" class="text-white">الاسئلة والأجوبة</a></li>
+        </ul>
+
+    </footer>
+
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

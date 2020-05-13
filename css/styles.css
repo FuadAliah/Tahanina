@@ -1,15 +1,30 @@
 @import url("./fonts.css");
 html {
   direction: rtl;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "HelveticaNeueLT Arabic 55 Roman";
   text-align: right;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
   text-decoration: none !important;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .landPage .customNav {
@@ -21,9 +36,32 @@ a {
   width: 380px;
 }
 
+@media (max-width: 768px) {
+  .landPage .customNav .createActions {
+    width: 42%;
+  }
+}
+
+@media (max-width: 567px) {
+  .landPage .customNav .createActions {
+    width: 45%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90px;
+  }
+}
+
 .landPage .customNav .createActions a {
   padding: 0.375rem 2.5rem;
   font-family: "HelveticaNeueLT Arabic 75";
+}
+
+@media (max-width: 768px) {
+  .landPage .customNav .createActions a {
+    padding: 0.375rem 1.25rem;
+  }
 }
 
 .landPage .customNav .createActions .signUp {
@@ -73,9 +111,37 @@ a {
   padding: 0 40px;
 }
 
+@media (max-width: 768px) {
+  .landPage .banner .bannerData {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    top: 40px;
+    height: 75%;
+  }
+}
+
 .landPage .banner .bannerData .information {
   height: 75%;
   width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .landPage .banner .bannerData .information {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .banner .bannerData .information {
+    width: 100%;
+    height: 80%;
+  }
 }
 
 .landPage .banner .bannerData .information .title {
@@ -83,8 +149,20 @@ a {
   font-family: "HelveticaNeueLT Arabic 75";
 }
 
+@media (max-width: 1200px) {
+  .landPage .banner .bannerData .information .title {
+    font-size: 32px;
+  }
+}
+
 .landPage .banner .bannerData .information .paragraph {
   font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  .landPage .banner .bannerData .information .paragraph {
+    font-size: 20px;
+  }
 }
 
 .landPage .banner .bannerData .information .request {
@@ -96,6 +174,12 @@ a {
   padding: 14px 40px;
   font-size: 18px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .landPage .banner .bannerData .information .request {
+    margin: 0 auto;
+  }
 }
 
 .landPage .banner .bannerData .information .request:hover {
@@ -110,6 +194,19 @@ a {
   top: -80px;
 }
 
+@media (max-width: 1200px) {
+  .landPage .popupSection {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .popupSection {
+    height: 640px;
+    width: 90%;
+  }
+}
+
 .landPage .popupSection .popup {
   height: 100%;
   border-left: 10px solid #005bea;
@@ -118,10 +215,33 @@ a {
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+  .landPage .popupSection .popup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .landPage .popupSection .popup .column {
   height: 100%;
   padding: 30px 80px;
   color: #005bea;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .landPage .popupSection .popup .column {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .popupSection .popup .column {
+    width: 100%;
+    padding: 30px;
+  }
 }
 
 .landPage .popupSection .popup .column h3 {
@@ -139,6 +259,12 @@ a {
   font-family: "HelveticaNeueLT Arabic 75";
 }
 
+@media (max-width: 768px) {
+  .landPage .popupSection .popup .column a {
+    padding: 10px 40px;
+  }
+}
+
 .landPage .popupSection .popup .column a:hover {
   background: #005bea;
   color: #fff;
@@ -154,29 +280,163 @@ a {
   top: 15%;
 }
 
+@media (max-width: 768px) {
+  .landPage .popupSection::before {
+    width: 70%;
+    height: 1px;
+    left: 15%;
+    top: 50%;
+  }
+}
+
 .landPage .specifications .specific {
   position: relative;
   top: -80px;
   margin-bottom: 100px;
 }
 
-.landPage .specifications .specific .content .title {
+@media (max-width: 768px) {
+  .landPage .specifications .specific:first-child .contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .specifications .specific .contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.landPage .specifications .specific .contain .content {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .landPage .specifications .specific .contain .content {
+    width: 85%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.landPage .specifications .specific .contain .content .title {
   font-size: 36px;
   font-family: "HelveticaNeueLT Arabic 75";
   color: #005bea;
 }
 
-.landPage .specifications .specific .content .paragraph {
+.landPage .specifications .specific .contain .content .paragraph {
   font-size: 18px;
+}
+
+.landPage .specifications .specific .contain .content:first-child {
+  margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+  .landPage .specifications .specific .contain .content:first-child {
+    margin-left: 0;
+  }
+}
+
+.landPage .specifications .specific .contain .content:last-child {
+  margin-right: 32px;
+}
+
+@media (max-width: 768px) {
+  .landPage .specifications .specific .contain .content:last-child {
+    margin-left: 0;
+  }
+}
+
+.landPage .specifications .specific .contain .img {
+  height: auto;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .landPage .specifications .specific .contain .img {
+    width: 90%;
+  }
+}
+
+.landPage .specifications .specific .contain .img img {
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .landPage .specifications .specific .contain .img img {
+    width: 100%;
+  }
 }
 
 .landPage .designDiscount {
   background: linear-gradient(32deg, #8e54e9 0%, #005bea 100%);
 }
 
+.landPage .designDiscount .data {
+  height: 480px;
+}
+
+@media (max-width: 768px) {
+  .landPage .designDiscount .data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+    height: auto;
+  }
+}
+
+.landPage .designDiscount .data img {
+  height: 360px;
+}
+
+@media (max-width: 768px) {
+  .landPage .designDiscount .data img {
+    height: 300px;
+  }
+}
+
 .landPage .designDiscount .data .content {
   height: 260px;
   color: #fff;
+  width: 50%;
+  margin-left: 32px;
+}
+
+@media (max-width: 1200px) {
+  .landPage .designDiscount .data .content {
+    height: 360px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landPage .designDiscount .data .content {
+    height: 410px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .designDiscount .data .content {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 60px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 567px) {
+  .landPage .designDiscount .data .content {
+    height: 410px;
+  }
 }
 
 .landPage .designDiscount .data .content .title {
@@ -199,6 +459,12 @@ a {
   width: fit-content;
 }
 
+@media (max-width: 768px) {
+  .landPage .designDiscount .data a {
+    margin: 0 auto;
+  }
+}
+
 .landPage .designDiscount .data a:hover {
   color: #005bea;
   background: #fff;
@@ -208,13 +474,31 @@ a {
   height: 100vh;
 }
 
+@media (max-width: 1200px) {
+  .landPage .testimonials {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .landPage .testimonials {
+    height: 100vh;
+  }
+}
+
 .landPage .testimonials .item {
-  height: 420px;
+  height: auto;
   padding: 0 20%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+@media (max-width: 768px) {
+  .landPage .testimonials .item {
+    padding: 0 10%;
+  }
 }
 
 .landPage .testimonials .item img {
@@ -237,12 +521,36 @@ a {
   font-family: "HelveticaNeueLT Arabic 45";
 }
 
+@media (max-width: 1200px) {
+  .landPage .testimonials .item .text {
+    font-size: 18px;
+  }
+}
+
 .landPage .testimonials a {
   color: #005bea;
   font-size: 80px;
   height: 30%;
   margin-top: auto;
   opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .landPage .testimonials a {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landPage .testimonials a {
+    height: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .testimonials a {
+    display: none;
+  }
 }
 
 .landPage .testimonials .prev {
@@ -261,11 +569,42 @@ a {
   height: 460px;
 }
 
+@media (max-width: 768px) {
+  .landPage .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 640px;
+  }
+}
+
 .landPage .contacts .address {
   width: 35%;
   background: #f9f9f9;
   height: 100%;
   padding: 6% 4%;
+}
+
+@media (max-width: 1200px) {
+  .landPage .contacts .address {
+    width: 45%;
+  }
+}
+
+@media (max-width: 992px) {
+  .landPage .contacts .address {
+    width: 50%;
+    padding: 10% 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .contacts .address {
+    width: 100%;
+    padding: 5%;
+    height: 88%;
+  }
 }
 
 .landPage .contacts .address div i {
@@ -297,8 +636,26 @@ a {
   height: 100%;
 }
 
+@media (max-width: 1200px) {
+  .landPage .contacts .map {
+    width: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .landPage .contacts .map {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .contacts .map {
+    width: 100%;
+  }
+}
+
 .landPage .inquiry {
-  height: 600px;
+  height: auto;
   background: #1a1a1a;
   border-top: 8px solid #005bea;
 }
@@ -306,6 +663,15 @@ a {
 .landPage .inquiry .data {
   position: relative;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .landPage .inquiry .data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .landPage .inquiry .data::before {
@@ -320,8 +686,27 @@ a {
   background: #fff;
 }
 
+@media (max-width: 768px) {
+  .landPage .inquiry .data::before {
+    display: none;
+  }
+}
+
 .landPage .inquiry .data .about {
   padding: 80px;
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .landPage .inquiry .data .about {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .inquiry .data .about {
+    width: 100%;
+  }
 }
 
 .landPage .inquiry .data .about img {
@@ -333,12 +718,46 @@ a {
 }
 
 .landPage .inquiry .data .message {
+  width: 50%;
   padding: 80px;
+}
+
+@media (max-width: 992px) {
+  .landPage .inquiry .data .message {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landPage .inquiry .data .message {
+    width: 100%;
+  }
 }
 
 .landPage .inquiry .data .message p {
   font-size: 24px;
   font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.landPage .inquiry .data .message form .name {
+  margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+  .landPage .inquiry .data .message form .name {
+    margin-left: 0;
+  }
+}
+
+.landPage .inquiry .data .message form .email {
+  margin-right: 32px;
+}
+
+@media (max-width: 768px) {
+  .landPage .inquiry .data .message form .email {
+    margin-right: 0;
+    margin-top: 24px;
+  }
 }
 
 .landPage .inquiry .data .message form label {
@@ -355,17 +774,415 @@ a {
   background: #005bea;
 }
 
-.landPage footer {
-  height: 110px;
+.signUp .contain,
+.forgot .contain {
+  height: 110vh;
+}
+
+.signUp .contain .content,
+.forgot .contain .content {
+  width: 100%;
+  height: 80%;
+}
+
+@media (max-width: 768px) {
+  .signUp .contain .content,
+  .forgot .contain .content {
+    height: 90%;
+  }
+}
+
+.signUp .contain .content .signing,
+.forgot .contain .content .signing {
+  width: 100%;
+  height: 75%;
+  min-height: 615px;
+}
+
+.signUp .contain .content .signing .head .intro,
+.forgot .contain .content .signing .head .intro {
+  font-size: 18px;
+  font-family: "HelveticaNeueLT Arabic 45";
+}
+
+.signUp .contain .content .signing .body form,
+.forgot .contain .content .signing .body form {
+  height: 340px;
+}
+
+.signUp .contain .content .signing .body form input,
+.signUp .contain .content .signing .body form select,
+.signUp .contain .content .signing .body form button,
+.forgot .contain .content .signing .body form input,
+.forgot .contain .content .signing .body form select,
+.forgot .contain .content .signing .body form button {
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.signUp .contain .content .signing .body form .after,
+.forgot .contain .content .signing .body form .after {
+  position: relative;
+}
+
+.signUp .contain .content .signing .body form .after i,
+.forgot .contain .content .signing .body form .after i {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+.signUp .contain .content .signing .body form button,
+.forgot .contain .content .signing .body form button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ffbc3c;
+  color: #005bea;
+  margin: 0 auto;
+  padding: 0 60px;
+  border: 0;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.signUp .contain .content .signing .body form button:hover,
+.forgot .contain .content .signing .body form button:hover {
+  background: #fff;
+}
+
+.signUp .contain .content .signing .body form .loginBtn,
+.forgot .contain .content .signing .body form .loginBtn {
   background: #005bea;
   color: #fff;
 }
 
-.landPage footer .copyright {
-  width: 436px;
+.signUp .contain .content .signing .body form .loginBtn:hover,
+.forgot .contain .content .signing .body form .loginBtn:hover {
+  color: #005bea;
+  background: #ffbc3c;
 }
 
-.landPage footer ul {
-  width: 35%;
+.signUp .contain .content .signing .body form .loginForm,
+.forgot .contain .content .signing .body form .loginForm {
+  height: 45%;
+  margin-bottom: auto;
+}
+
+.signUp .contain .content .signing .signUp,
+.forgot .contain .content .signing .signUp {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(32deg, #8e54e9 0%, #005bea 100%);
+  padding: 3.5rem;
+}
+
+.signUp .contain .content .signing .signUp::before,
+.forgot .contain .content .signing .signUp::before {
+  content: "";
+  position: absolute;
+  background: url(../imgs/girl.svg) no-repeat;
+  width: 170px;
+  height: 355px;
+  z-index: 2;
+  top: 206px;
+  right: -120px;
+}
+
+.signUp .contain .content .signing .signIn,
+.forgot .contain .content .signing .signIn {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #005bea;
+  padding: 3.5rem;
+}
+
+.signUp .contain .content .signing .signIn::after,
+.forgot .contain .content .signing .signIn::after {
+  content: "";
+  position: absolute;
+  background: url(../imgs/hat.svg) no-repeat;
+  width: 120px;
+  height: 72px;
+  z-index: 2;
+  top: -36px;
+  left: -70px;
+}
+
+.signUp .contain .content .mobSigning,
+.forgot .contain .content .mobSigning {
+  width: 100%;
+  height: 75%;
+  min-height: 615px;
+}
+
+.signUp .contain .content .mobSigning ul,
+.forgot .contain .content .mobSigning ul {
+  width: 100%;
+  padding: 0;
+}
+
+.signUp .contain .content .mobSigning ul li,
+.forgot .contain .content .mobSigning ul li {
+  width: 50%;
+  height: 60px;
+}
+
+.signUp .contain .content .mobSigning ul li a,
+.forgot .contain .content .mobSigning ul li a {
+  line-height: 44px;
+  text-align: center;
+  border-radius: 0;
+  background: transparent;
+  font-size: 20px;
+  color: #cccbcb;
+}
+
+.signUp .contain .content .mobSigning ul li a.active,
+.forgot .contain .content .mobSigning ul li a.active {
+  background: #ffbc3c;
+  color: #005bea;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.signUp .contain .content .mobSigning .head .intro,
+.forgot .contain .content .mobSigning .head .intro {
+  font-size: 18px;
+  font-family: "HelveticaNeueLT Arabic 45";
+}
+
+.signUp .contain .content .mobSigning .body form,
+.forgot .contain .content .mobSigning .body form {
+  height: 340px;
+}
+
+.signUp .contain .content .mobSigning .body form input,
+.signUp .contain .content .mobSigning .body form select,
+.signUp .contain .content .mobSigning .body form button,
+.forgot .contain .content .mobSigning .body form input,
+.forgot .contain .content .mobSigning .body form select,
+.forgot .contain .content .mobSigning .body form button {
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.signUp .contain .content .mobSigning .body form .after,
+.forgot .contain .content .mobSigning .body form .after {
+  position: relative;
+}
+
+.signUp .contain .content .mobSigning .body form .after i,
+.forgot .contain .content .mobSigning .body form .after i {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+.signUp .contain .content .mobSigning .body form button,
+.forgot .contain .content .mobSigning .body form button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ffbc3c;
+  color: #005bea;
+  margin: 0 auto;
+  padding: 0 60px;
+  border: 0;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.signUp .contain .content .mobSigning .body form button:hover,
+.forgot .contain .content .mobSigning .body form button:hover {
+  background: #fff;
+}
+
+.signUp .contain .content .mobSigning .body form .loginBtn,
+.forgot .contain .content .mobSigning .body form .loginBtn {
+  background: #005bea;
+  color: #fff;
+}
+
+.signUp .contain .content .mobSigning .body form .loginBtn:hover,
+.forgot .contain .content .mobSigning .body form .loginBtn:hover {
+  color: #005bea;
+  background: #ffbc3c;
+}
+
+.signUp .contain .content .mobSigning .body form .loginForm,
+.forgot .contain .content .mobSigning .body form .loginForm {
+  height: 45%;
+  margin-bottom: auto;
+}
+
+.signUp .contain .content .mobSigning .signUp,
+.forgot .contain .content .mobSigning .signUp {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(32deg, #8e54e9 0%, #005bea 100%);
+  padding: 2.5rem;
+}
+
+.signUp .contain .content .mobSigning .signIn,
+.forgot .contain .content .mobSigning .signIn {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #005bea;
+  padding: 2.5rem;
+}
+
+.signUp .contain .content .socialSigning,
+.forgot .contain .content .socialSigning {
+  height: 18%;
+  min-height: 145px;
+}
+
+.signUp .contain .content .socialSigning .social,
+.forgot .contain .content .socialSigning .social {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .signUp .contain .content .socialSigning .social,
+  .forgot .contain .content .socialSigning .social {
+    width: 90%;
+  }
+}
+
+.signUp .contain .content .socialSigning .social a,
+.forgot .contain .content .socialSigning .social a {
+  width: 42%;
+  height: 60px;
+  border-radius: 30px;
+  padding: 5px 30px;
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .signUp .contain .content .socialSigning .social a,
+  .forgot .contain .content .socialSigning .social a {
+    width: 45%;
+  }
+}
+
+.signUp .contain .content .socialSigning .social a span,
+.forgot .contain .content .socialSigning .social a span {
+  width: 85%;
+  font-family: "HelveticaNeueLT Arabic 75";
+}
+
+.signUp .contain .content .socialSigning .social a i,
+.forgot .contain .content .socialSigning .social a i {
+  width: 15%;
+  font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .signUp .contain .content .socialSigning .social a i,
+  .forgot .contain .content .socialSigning .social a i {
+    width: 100%;
+  }
+}
+
+.signUp .contain .content .socialSigning .social .facebook,
+.forgot .contain .content .socialSigning .social .facebook {
+  background: #3b5998;
+}
+
+.signUp .contain .content .socialSigning .social .google,
+.forgot .contain .content .socialSigning .social .google {
+  background: #db3236;
+}
+
+.profile .profileContent {
+  height: auto;
+}
+
+.profile .profileContent .content .profileImg img {
+  min-width: 147px;
+  min-height: 147px;
+  width: 147px;
+  height: 147px;
+}
+
+.profile .profileContent .content .profileImg form input {
+  opacity: 0;
+  width: 147px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.profile .profileContent .content .profileImg form label {
+  text-align: center;
+  color: #005bea;
+  text-decoration: underline;
+  width: 147px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.profile .profileContent .content form label {
+  line-height: 45px;
+  font-family: "HelveticaNeueLT Arabic 75";
+  color: #005bea;
+}
+
+@media (max-width: 768px) {
+  .profile .profileContent .content form label {
+    line-height: 30px;
+  }
+}
+
+.profile .profileContent .content form input,
+.profile .profileContent .content form button {
+  height: 60px;
+}
+
+.profile .profileContent .content form .inactivate {
+  top: 17px;
+  left: 35px;
+}
+
+@media (max-width: 768px) {
+  .profile .profileContent .content form .inactivate {
+    top: 60px;
+  }
+}
+
+.profile .profileContent .content form .divider {
+  border-top: 1px solid #cccbcb;
+}
+
+.profile .profileContent .content form .textArea label {
+  line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .profile .profileContent .content form .textArea label {
+    line-height: 30px;
+  }
+}
+
+.profile .profileContent .content form .textArea p {
+  top: 35px;
+  color: #b3b2b3;
+}
+
+@media (max-width: 768px) {
+  .profile .profileContent .content form .textArea p {
+    top: 10px;
+    left: -65px;
+  }
+}
+
+.profile .profileContent .content form button {
+  width: 100%;
+  background: linear-gradient(32deg, #8e54e9 0%, #005bea 100%);
+  font-family: "HelveticaNeueLT Arabic 75";
+  font-size: 18px;
 }
 /*# sourceMappingURL=styles.css.map */

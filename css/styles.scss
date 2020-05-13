@@ -15,15 +15,30 @@ $light: "HelveticaNeueLT Arabic 45";
 
 html {
     direction: rtl;
+    overflow-x: hidden;
 }
 
 body {
     font-family: "HelveticaNeueLT Arabic 55 Roman";
     text-align: right;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
     text-decoration: none !important;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
 }
 
 .landPage {
@@ -33,10 +48,20 @@ a {
 
         .createActions {
             width: 380px;
-
+            @media (max-width: 768px) {
+                width: 42%;
+            }
+            @media (max-width: 567px) {
+                width: 45%;
+                flex-direction: column;
+                height: 90px;
+            }
             a {
                 padding: 0.375rem 2.5rem;
                 font-family: $Bold;
+                @media (max-width: 768px) {
+                    padding: 0.375rem 1.25rem;
+                }
             }
 
             .signUp {
@@ -82,18 +107,38 @@ a {
             right: 0;
             align-items: flex-start;
             padding: 0 40px;
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+                top: 40px;
+                height: 75%;
+            }
 
             .information {
                 height: 75%;
                 width: 50%;
+                @media (max-width: 1200px) {
+                    width: 70%;
+                }
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: 80%;
+                }
 
                 .title {
                     font-size: 36px;
                     font-family: $Bold;
+                    @media (max-width: 1200px) {
+                        font-size: 32px;
+                    }
                 }
 
                 .paragraph {
                     font-size: 24px;
+                    @media (max-width: 1200px) {
+                        font-size: 20px;
+                    }
                 }
 
                 .request {
@@ -103,6 +148,9 @@ a {
                     padding: 14px 40px;
                     font-size: 18px;
                     color: #fff;
+                    @media (max-width: 768px) {
+                        margin: 0 auto;
+                    }
 
                     &:hover {
                         color: $mainBlue;
@@ -118,17 +166,35 @@ a {
         width: 75%;
         height: 240px;
         top: -80px;
+        @media (max-width: 1200px) {
+            width: 90%;
+        }
+        @media (max-width: 768px) {
+            height: 640px;
+            width: 90%;
+        }
 
         .popup {
             height: 100%;
             border-left: 10px solid $mainBlue;
             border-right: 10px solid $mainBlue;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
 
             .column {
                 height: 100%;
                 padding: 30px 80px;
                 color: $mainBlue;
+                width: 50%;
+                @media (max-width: 1200px) {
+                    padding: 30px 20px;
+                }
+                @media (max-width: 768px) {
+                    width: 100%;
+                    padding: 30px;
+                }
 
                 h3 {
                     font-size: 20px;
@@ -141,6 +207,9 @@ a {
                     padding: 10px 50px;
                     width: fit-content;
                     font-family: $Bold;
+                    @media (max-width: 768px) {
+                        padding: 10px 40px;
+                    }
 
                     &:hover {
                         background: $mainBlue;
@@ -157,6 +226,12 @@ a {
             background: $mainBlue;
             left: 50%;
             top: 15%;
+            @media (max-width: 768px) {
+                width: 70%;
+                height: 1px;
+                left: 15%;
+                top: 50%;
+            }
         }
     }
 
@@ -165,16 +240,59 @@ a {
             position: relative;
             top: -80px;
             margin-bottom: 100px;
-
-            .content {
-                .title {
-                    font-size: 36px;
-                    font-family: $Bold;
-                    color: $mainBlue;
+            &:first-child {
+                .contain {
+                    @media (max-width: 768px) {
+                        flex-direction: column-reverse;
+                    }
                 }
+            }
 
-                .paragraph {
-                    font-size: 18px;
+            .contain {
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+                .content {
+                    width: 50%;
+                    @media (max-width: 768px) {
+                        width: 85%;
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    .title {
+                        font-size: 36px;
+                        font-family: $Bold;
+                        color: $mainBlue;
+                    }
+
+                    .paragraph {
+                        font-size: 18px;
+                    }
+                    &:first-child {
+                        margin-left: 32px;
+                        @media (max-width: 768px) {
+                            margin-left: 0;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 32px;
+                        @media (max-width: 768px) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .img {
+                    height: auto;
+                    width: 50%;
+                    @media (max-width: 768px) {
+                        width: 90%;
+                    }
+                    img {
+                        width: 90%;
+                        @media (max-width: 768px) {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -184,9 +302,38 @@ a {
         background: $gradientBack;
 
         .data {
+            height: 480px;
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                text-align: center;
+                height: auto;
+            }
+            img {
+                height: 360px;
+                @media (max-width: 768px) {
+                    height: 300px;
+                }
+            }
             .content {
                 height: 260px;
                 color: #fff;
+                width: 50%;
+                margin-left: 32px;
+                @media (max-width: 1200px) {
+                    height: 360px;
+                }
+                @media (max-width: 992px) {
+                    height: 410px;
+                }
+                @media (max-width: 768px) {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 60px;
+                    height: 280px;
+                }
+                @media (max-width: 567px) {
+                    height: 410px;
+                }
 
                 .title {
                     font-size: 36px;
@@ -205,6 +352,9 @@ a {
                 border: 2px solid #fff;
                 padding: 11px 50px;
                 width: fit-content;
+                @media (max-width: 768px) {
+                    margin: 0 auto;
+                }
 
                 &:hover {
                     color: $mainBlue;
@@ -216,11 +366,20 @@ a {
 
     .testimonials {
         height: 100vh;
+        @media (max-width: 1200px) {
+            height: 75vh;
+        }
+        @media (max-width: 992px) {
+            height: 100vh;
+        }
 
         .item {
-            height: 420px;
+            height: auto;
             padding: 0 20%;
             user-select: none;
+            @media (max-width: 768px) {
+                padding: 0 10%;
+            }
 
             img {
                 width: fit-content;
@@ -238,6 +397,9 @@ a {
                 color: $darkGray;
                 font-size: 22px;
                 font-family: $light;
+                @media (max-width: 1200px) {
+                    font-size: 18px;
+                }
             }
         }
 
@@ -247,6 +409,15 @@ a {
             height: 30%;
             margin-top: auto;
             opacity: 1;
+            @media (max-width: 1200px) {
+                font-size: 60px;
+            }
+            @media (max-width: 992px) {
+                height: 45%;
+            }
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
 
         .prev {
@@ -260,12 +431,28 @@ a {
 
     .contacts {
         height: 460px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            height: 640px;
+        }
 
         .address {
             width: 35%;
             background: #f9f9f9;
             height: 100%;
             padding: 6% 4%;
+            @media (max-width: 1200px) {
+                width: 45%;
+            }
+            @media (max-width: 992px) {
+                width: 50%;
+                padding: 10% 3%;
+            }
+            @media (max-width: 768px) {
+                width: 100%;
+                padding: 5%;
+                height: 88%;
+            }
 
             div i {
                 width: 55px;
@@ -294,17 +481,29 @@ a {
         .map {
             width: 65%;
             height: 100%;
+            @media (max-width: 1200px) {
+                width: 65%;
+            }
+            @media (max-width: 992px) {
+                width: 50%;
+            }
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
 
     .inquiry {
-        height: 600px;
+        height: auto;
         background: $darkGray;
         border-top: 8px solid $mainBlue;
 
         .data {
             position: relative;
             height: 100%;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
 
             &::before {
                 content: "";
@@ -315,9 +514,20 @@ a {
                 left: 50%;
                 transform: translateY(-50%);
                 background: #fff;
+                @media (max-width: 768px) {
+                    display: none;
+                }
             }
             .about {
                 padding: 80px;
+                width: 50%;
+                @media (max-width: 992px) {
+                    padding: 60px 30px;
+                }
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+
                 img {
                     width: 204px;
                 }
@@ -328,7 +538,14 @@ a {
             }
 
             .message {
+                width: 50%;
                 padding: 80px;
+                @media (max-width: 992px) {
+                    padding: 60px 30px;
+                }
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
 
                 p {
                     font-size: 24px;
@@ -336,6 +553,19 @@ a {
                 }
 
                 form {
+                    .name {
+                        margin-left: 32px;
+                        @media (max-width: 768px) {
+                            margin-left: 0;
+                        }
+                    }
+                    .email {
+                        margin-right: 32px;
+                        @media (max-width: 768px) {
+                            margin-right: 0;
+                            margin-top: 24px;
+                        }
+                    }
                     label {
                         font-family: $Bold;
                         color: #fff;
@@ -353,18 +583,334 @@ a {
             }
         }
     }
+}
 
-    footer {
-        height: 110px;
-        background: $mainBlue;
-        color: #fff;
+.signUp,
+.forgot {
+    .contain {
+        height: 110vh;
 
-        .copyright {
-            width: 436px;
+        .content {
+            width: 100%;
+            height: 80%;
+            @media (max-width: 768px) {
+                height: 90%;
+            }
+
+            .signing {
+                width: 100%;
+                height: 75%;
+                min-height: 615px;
+
+                .head {
+                    .intro {
+                        font-size: 18px;
+                        font-family: $light;
+                    }
+                }
+                .body {
+                    form {
+                        height: 340px;
+                        input,
+                        select,
+                        button {
+                            height: 50px;
+                            border-radius: 5px;
+                            padding: 0 20px;
+                        }
+                        .after {
+                            position: relative;
+                            i {
+                                position: absolute;
+                                left: 20px;
+                                top: 18px;
+                            }
+                        }
+                        button {
+                            width: fit-content;
+                            background: $orange;
+                            color: $mainBlue;
+                            margin: 0 auto;
+                            padding: 0 60px;
+                            border: 0;
+                            font-family: $Bold;
+                            &:hover {
+                                background: #fff;
+                            }
+                        }
+                        .loginBtn {
+                            background: $mainBlue;
+                            color: #fff;
+                            &:hover {
+                                color: $mainBlue;
+                                background: $orange;
+                            }
+                        }
+                        .loginForm {
+                            height: 45%;
+                            margin-bottom: auto;
+                        }
+                    }
+                }
+
+                .signUp {
+                    width: 50%;
+                    height: 100%;
+                    background: $gradientBack;
+                    padding: 3.5rem;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: url(../imgs/girl.svg) no-repeat;
+                        width: 170px;
+                        height: 355px;
+                        z-index: 2;
+                        top: 206px;
+                        right: -120px;
+                    }
+                }
+
+                .signIn {
+                    width: 50%;
+                    height: 100%;
+                    border: 1px solid $mainBlue;
+                    padding: 3.5rem;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background: url(../imgs/hat.svg) no-repeat;
+                        width: 120px;
+                        height: 72px;
+                        z-index: 2;
+                        top: -36px;
+                        left: -70px;
+                    }
+                }
+            }
+
+            .mobSigning {
+                width: 100%;
+                height: 75%;
+                min-height: 615px;
+
+                ul {
+                    width: 100%;
+                    padding: 0;
+
+                    li {
+                        width: 50%;
+                        height: 60px;
+
+                        a {
+                            line-height: 44px;
+                            text-align: center;
+                            border-radius: 0;
+                            background: transparent;
+                            font-size: 20px;
+                            color: $borderColor;
+
+                            &.active {
+                                background: $orange;
+                                color: $mainBlue;
+                                font-family: $Bold;
+                            }
+                        }
+                    }
+                }
+
+                .head {
+                    .intro {
+                        font-size: 18px;
+                        font-family: $light;
+                    }
+                }
+                .body {
+                    form {
+                        height: 340px;
+                        input,
+                        select,
+                        button {
+                            height: 50px;
+                            border-radius: 5px;
+                            padding: 0 20px;
+                        }
+                        .after {
+                            position: relative;
+                            i {
+                                position: absolute;
+                                left: 20px;
+                                top: 18px;
+                            }
+                        }
+                        button {
+                            width: fit-content;
+                            background: $orange;
+                            color: $mainBlue;
+                            margin: 0 auto;
+                            padding: 0 60px;
+                            border: 0;
+                            font-family: $Bold;
+                            &:hover {
+                                background: #fff;
+                            }
+                        }
+                        .loginBtn {
+                            background: $mainBlue;
+                            color: #fff;
+                            &:hover {
+                                color: $mainBlue;
+                                background: $orange;
+                            }
+                        }
+                        .loginForm {
+                            height: 45%;
+                            margin-bottom: auto;
+                        }
+                    }
+                }
+
+                .signUp {
+                    width: 100%;
+                    height: 100%;
+                    background: $gradientBack;
+                    padding: 2.5rem;
+                }
+
+                .signIn {
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid $mainBlue;
+                    padding: 2.5rem;
+                }
+            }
+
+            .socialSigning {
+                height: 18%;
+                min-height: 145px;
+
+                .social {
+                    width: 60%;
+                    margin: 0 auto;
+                    @media (max-width: 768px) {
+                        width: 90%;
+                    }
+
+                    a {
+                        width: 42%;
+                        height: 60px;
+                        border-radius: 30px;
+                        padding: 5px 30px;
+                        font-size: 22px;
+                        @media (max-width: 768px) {
+                            width: 45%;
+                        }
+
+                        span {
+                            width: 85%;
+                            font-family: $Bold;
+                        }
+
+                        i {
+                            width: 15%;
+                            font-size: 28px;
+                            @media (max-width: 768px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .facebook {
+                        background: #3b5998;
+                    }
+                    .google {
+                        background: #db3236;
+                    }
+                }
+            }
         }
+    }
+}
 
-        ul {
-            width: 35%;
+.profile {
+    .profileContent {
+        height: auto;
+
+        .content {
+            .profileImg {
+                img {
+                    min-width: 147px;
+                    min-height: 147px;
+                    width: 147px;
+                    height: 147px;
+                }
+                form {
+                    input {
+                        opacity: 0;
+                        width: 147px;
+                        position: absolute;
+                        top: 0;
+                        z-index: 1;
+                    }
+                    label {
+                        text-align: center;
+                        color: $mainBlue;
+                        text-decoration: underline;
+                        width: 147px;
+                        position: absolute;
+                        top: 0;
+                        cursor: pointer;
+                        z-index: 2;
+                    }
+                }
+            }
+
+            form {
+                label {
+                    line-height: 45px;
+                    font-family: $Bold;
+                    color: $mainBlue;
+                    @media (max-width: 768px) {
+                        line-height: 30px;
+                    }
+                }
+                input,
+                button {
+                    height: 60px;
+                }
+                .inactivate {
+                    top: 17px;
+                    left: 35px;
+                    @media (max-width: 768px) {
+                        top: 60px;
+                    }
+                }
+                .divider {
+                    border-top: 1px solid $borderColor;
+                }
+                .textArea {
+                    label {
+                        line-height: 24px;
+                        @media (max-width: 768px) {
+                            line-height: 30px;
+                        }
+                    }
+                    p {
+                        top: 35px;
+                        color: #b3b2b3;
+                        @media (max-width: 768px) {
+                            top: 10px;
+                            left: -65px;
+                        }
+                    }
+                }
+                button {
+                    width: 100%;
+                    background: $gradientBack;
+                    font-family: $Bold;
+                    font-size: 18px;
+                }
+            }
         }
     }
 }

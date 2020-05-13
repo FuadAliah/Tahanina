@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./node_modules/line-awesome/dist/line-awesome/css/line-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/public.css">
 
     <title>Landing page</title>
 </head>
@@ -19,7 +20,7 @@
             <div class="d-flex justify-content-between align-items-center w-100 my-1">
 
                 <div class="createActions d-flex justify-content-between">
-                    <a href="#" class="signUp btn">تسجيل الدخول</a>
+                    <a href="./sign-up.html" class="signUp btn">تسجيل الدخول</a>
                     <a href="#" class="createBook btn">أنشئ دفتر تخرجك!</a>
                 </div>
 
@@ -63,7 +64,7 @@
     <div class="popupSection m-auto">
         <div class="popup bg-white d-flex">
 
-            <div class="column text-center w-50 d-flex flex-column justify-content-between">
+            <div class="column text-center d-flex flex-column justify-content-between">
                 <h3 class="m-0">شارك أهم لحظات حياتك مع الأهل والأصدقاء!</h3>
                 <p class="m-0 paragraph">قم بإنشاء حسابك الخاص من خلال موقع تهانينا! وحصل على أجمل تعليقات وتهاني؛
                     سواء كانت أعياد ميلاد أم تخرج أو حتى مولود جديد، وحتفظ بها مجاناً للأبد على حسابك.
@@ -71,7 +72,7 @@
                 <a href="#" class="mx-auto rounded">سجل الآن مجاناً</a>
             </div>
 
-            <div class="column text-center w-50 d-flex flex-column justify-content-between">
+            <div class="column text-center d-flex flex-column justify-content-between">
                 <h3 class="m-0">اختر تصاميم أحترافية لتدفتر تخرجك!</h3>
                 <p class="m-0 paragraph">يمكنك الآن مع موقع تهانينا أن تقوم بطلب تصميم دفتر تخرج من خلال أختيار أحد 100
                     تصميم متواجد لدينا والدفع عن طريق الفيزا مباشرةً..
@@ -86,9 +87,9 @@
 
         <div class="specific">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center px-4">
+                <div class="contain d-flex justify-content-between align-items-center px-4">
 
-                    <div class="content w-50 ml-4">
+                    <div class="content">
                         <p class="title mb-4">سجل حسابك الآن</p>
                         <p class="paragraph mb-4">لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
                             ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ
@@ -96,8 +97,8 @@
                             لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف.
                         </p>
                     </div>
-                    <div class="text-left w-50">
-                        <img src="./imgs/createImg.svg" height="500" alt="">
+                    <div class="img text-left">
+                        <img src="./imgs/createImg.svg" alt="">
                     </div>
 
                 </div>
@@ -106,12 +107,12 @@
 
         <div class="specific">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center px-4">
-                    <div class="text-right w-50">
-                        <img src="./imgs/memoryImg.svg" height="500" alt="">
+                <div class="contain d-flex justify-content-between align-items-center px-4">
+                    <div class="img text-right">
+                        <img src="./imgs/memoryImg.svg" alt="">
                     </div>
 
-                    <div class="content w-50 mr-4">
+                    <div class="content">
                         <p class="title mb-4">احتفظ في ذكرياتك وعد لها متى شئت</p>
                         <p class="paragraph mb-4">لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
                             ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ
@@ -131,7 +132,7 @@
 
             <div class="data d-flex justify-content-between align-items-center px-4">
 
-                <div class="content w-50 ml-4 d-flex flex-column justify-content-between">
+                <div class="content d-flex flex-column justify-content-between">
                     <p class="title">خصم 50% على جميع التصاميم</p>
                     <p class="paragraph">لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
                         ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ
@@ -140,7 +141,7 @@
                     </p>
                     <a href="#" class="rounded">أطلب تصميمك!</a>
                 </div>
-                <div class="text-left w-50">
+                <div class="text-left">
                     <img src="./imgs/discountImg.svg" height="550" alt="">
                 </div>
 
@@ -197,15 +198,15 @@
     <div class="contacts d-flex align-items-center">
 
         <div class="address d-flex flex-column justify-content-between">
-            <div class="w-75 mx-auto d-flex align-items-center">
+            <div class="w-100 mx-auto d-flex align-items-center">
                 <i class="las la-phone"></i>
                 <span class="number">962 788571933</span>
             </div>
-            <div class="w-75 mx-auto d-flex align-items-center">
+            <div class="w-100 mx-auto d-flex align-items-center">
                 <i class="las la-envelope"></i>
                 <span><a href="#">tawfeekamr91@gmail.com</a></span>
             </div>
-            <div class="w-75 mx-auto d-flex align-items-center">
+            <div class="w-100 mx-auto d-flex align-items-center">
                 <i class="las la-map-marker-alt"></i>
                 <span>عمان، البيادر الجندويل، مبنى رقم 19</span>
             </div>
@@ -223,7 +224,7 @@
 
         <div class="data d-flex justify-content-between">
 
-            <div class="about w-50 d-flex flex-column">
+            <div class="about d-flex flex-column">
 
                 <img src="./imgs/whiteLogo.svg" height="90" alt="">
                 <p class="text mt-5 text-white">
@@ -239,17 +240,17 @@
 
             </div>
 
-            <div class="message w-50 d-flex flex-column">
+            <div class="message d-flex flex-column">
 
                 <p class="m-0 text-white">هل لديك أي استفسار؟ دعنا نتحدث</p>
 
                 <form>
                     <div class="form-row mt-4">
-                        <div class="form-group col-md-6 pl-3">
+                        <div class="form-group col-md-6 name">
                             <label for="formGroupExampleInput">اسمك:</label>
                             <input type="text" class="form-control" id="formGroupExampleInput">
                         </div>
-                        <div class="form-group col-md-6 pr-3">
+                        <div class="form-group col-md-6 email">
                             <label for="inputEmail4">بريدك الإلكتروني:</label>
                             <input type="email" class="form-control" id="inputEmail4">
                         </div>
@@ -285,18 +286,7 @@
             <li><a href="#" class="text-white">الاسئلة والأجوبة</a></li>
         </ul>
 
-
-
     </footer>
-
-
-
-
-
-
-
-
-
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
