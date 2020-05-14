@@ -56,6 +56,10 @@ $gradientBack: linear-gradient(32deg, rgb(142, 84, 233) 0%, rgb(0, 91, 234) 100%
     }
 }
 
+main {
+    min-height: calc(100vh - 185px);
+}
+
 footer {
     height: 90px;
     background: $mainBlue;

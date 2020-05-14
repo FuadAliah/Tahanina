@@ -53,6 +53,10 @@
   font-family: "HelveticaNeueLT Arabic 75" !important;
 }
 
+main {
+  min-height: calc(100vh - 185px);
+}
+
 footer {
   height: 90px;
   background: #005bea;

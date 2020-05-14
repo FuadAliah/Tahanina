@@ -21,7 +21,6 @@ html {
 body {
     font-family: "HelveticaNeueLT Arabic 55 Roman";
     text-align: right;
-    overflow-x: hidden;
 }
 
 img {
@@ -910,6 +909,215 @@ select::-ms-expand {
                     font-family: $Bold;
                     font-size: 18px;
                 }
+            }
+        }
+    }
+}
+
+.messages {
+    .messagesContent {
+        min-height: calc(100vh - 185px);
+        .content {
+            .emptyInbox {
+                height: 80vh;
+                padding: 3% 0;
+
+                img {
+                    height: 450px;
+                }
+
+                p {
+                    font-size: 28px;
+                    color: #b3b3b3;
+                    width: 50%;
+                    @media (max-width: 768px) {
+                        width: 90%;
+                    }
+                }
+
+                a {
+                    height: 60px;
+                    background: $mainBlue;
+                    line-height: 45px;
+                    width: fit-content;
+                    font-size: 18px;
+                    font-family: $Bold;
+                }
+            }
+            .hide {
+                display: none !important;
+            }
+            .messagesInbox {
+                .day {
+                    .messageBody {
+                        position: relative;
+                        border: 1px solid $borderColor;
+                        border-radius: 8px;
+                        a {
+                            position: absolute;
+                            top: 8px;
+                            left: 8px;
+                            color: $mainBlue;
+                            font-size: 24px;
+                        }
+                    }
+                    .unread {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            top: -10px;
+                            right: -10px;
+                            background: $mainBlue;
+                            border-radius: 50%;
+                        }
+                        .body {
+                            a {
+                                display: contents;
+                            }
+                            p {
+                                color: $gray;
+                                font-size: 20px;
+                                font-family: $Roman;
+                            }
+                        }
+                    }
+                    .read {
+                        .body {
+                            a {
+                                display: contents;
+                            }
+                            p {
+                                color: $gray;
+                                font-size: 20px;
+                                font-family: $light;
+                            }
+                        }
+                    }
+                }
+                .more {
+                    font-size: 20px;
+                    font-family: $Bold;
+                    color: $mainBlue;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
+
+.post {
+    form {
+        height: 800px;
+        .box {
+            height: 550px;
+            .right {
+                .dataMed {
+                    background: $gradientBack;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                    .head {
+                        height: 65%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        @media (max-width: 768px) {
+                            flex-direction: row;
+                        }
+
+                        .name {
+                            font-family: $Bold;
+                            font-size: 24px;
+                        }
+                        img {
+                            width: 125px;
+                            height: 125px;
+                            border: 5px solid #fff;
+                            border-radius: 50%;
+                            margin: 0 auto;
+                        }
+                    }
+                    .footer {
+                        a {
+                            i {
+                                font-size: 32px;
+                            }
+                        }
+                    }
+                }
+                .dataMob {
+                    display: none;
+                    background: $gradientBack;
+                    height: 100%;
+                    @media (max-width: 768px) {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                    }
+                    img {
+                        width: 105px;
+                        height: 105px;
+                        border: 5px solid #fff;
+                        border-radius: 50%;
+                    }
+                    .info {
+                        width: 63%;
+                        height: 190px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .name {
+                            font-size: 20px;
+                            font-family: $Bold;
+                        }
+                        .footer {
+                            a {
+                                i {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .left {
+                height: 100%;
+                margin-right: -15px;
+                padding-left: 0px;
+                padding-right: 0px;
+                @media (max-width: 768px) {
+                    height: auto;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                }
+                textarea {
+                    height: 100%;
+                    resize: none;
+                    border-radius: 0;
+                    border: 1px solid $mainBlue;
+                }
+            }
+        }
+        .actions {
+            height: 175px;
+            margin-right: auto;
+            @media (max-width: 768px){
+                margin: 0 auto;
+            }
+            button {
+                line-height: 45px;
+                background: $gradientBack;
+                font-family: $Bold;
+                font-size: 18px;
+                padding: 7px 107px;
+                height: 60px;
             }
         }
     }
